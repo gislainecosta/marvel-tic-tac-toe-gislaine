@@ -1,0 +1,12 @@
+<div class='container-card'>
+    <section class='card'>
+        <h1>Personagens Disponíveis</h1>
+        <section id='list'>
+            <article class='heroe' *ngFor = 'let heroe of array'>
+                <p>{{ heroe.foto }}</p>
+                <p>{{ heroe.nome }}</p>
+            </article>
+        </section>
+       
+    </section>
+</div>

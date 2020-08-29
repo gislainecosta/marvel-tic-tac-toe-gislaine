@@ -1,0 +1,45 @@
+.item-nav{
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-align: center;
+    border-right: 2px solid white;
+    font-size: 18px;
+}
+
+.item-nav:first-of-type{
+    width: 14vw;
+}
+
+.item-nav:nth-of-type(2){
+    width: 8vw;
+}
+
+.item-nav:last-of-type{
+    width: 18vw;
+    border:none;
+}
+
+.item-nav:hover{
+    color: #ffb7b7;
+}
+
+#cabecalho{
+    width: 100vw;
+    background: linear-gradient(90deg, #691107 0%, #000000 100%);
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+#cabecalho img{
+    width: 31vw;
+}
+
+#navegacao{
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+}

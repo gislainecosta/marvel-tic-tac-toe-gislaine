@@ -1,8 +1,28 @@
 h1{
+    margin: 4% 0 2% 0;
+    font-size: 2.5rem;
+}
+
+p{
+    margin-left: 2%;
     text-align: center;
-    width: 100%;
-    margin-bottom: 5%;
-    font-size: 2rem;
+}
+
+.container-card > img:hover{
+    transform: scale(1.05)
+}
+
+.container-card > img:active{
+    transform: scale(0.9)
+}
+
+.container-card > img{
+    position: absolute;
+    right: 13vw;
+    top: 3.2vw;
+    z-index: 9999;
+    width: 4vw;
+    cursor: pointer;
 }
 
 .container-card{
@@ -19,22 +39,56 @@ h1{
     backdrop-filter: blur(2px);
 }
 
-.card{
-    width: 40vw;
-    height: 85%;
-    overflow-x: hidden;    
-    background-color: white;
-    color: black;
-    border-radius: 3px;
-    box-shadow: 5px 5px 8px 0px rgba(50, 50, 50, 0.96);
-    padding: 3vh;
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    color: white;
+    height: 98vh;
+    background-image: url("../../../../assets/images/Fundo-card.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 
 #list{
-    width: 100%;
+    width: 90%;
+    height: 75%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4%;
 }
 
 .heroe{
     display: flex;
     width: 80%;
+    align-items: center;
+}
+
+.heroe img{
+    width: 10vw;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #f2f1f1);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #989fac);
 }

@@ -13,28 +13,124 @@ export class CardListComponent implements OnInit {
 
   array=[
     {
-      nome: 'Capitão América',
-      foto: 'aqui vai a foto'
+      nome: 'Captain Marvel (Carol Danvers)',
+      foto: '../../../../assets/images/API/Capita_Marvel.jpg'
     },
     {
-      nome: 'Homem de Ferro',
-      foto: 'aqui vai a foto'
+      nome: 'Venom (Ultimate)',
+      foto: '../../../../assets/images/API/Venon.jpg'
     },
     {
-      nome: 'Viúva Negra',
-      foto: 'aqui vai a foto'
+      nome: 'Dazzler (Ultimate)',
+      foto: '../../../../assets/images/API/Dazzler.jpg'
     },
     {
-      nome: 'Senhor das Estrelas',
-      foto: 'aqui vai a foto'
+      nome: 'Deadpool',
+      foto: '../../../../assets/images/API/Deadpool.jpg'
     },
     {
-      nome: 'Hulk',
-      foto: 'aqui vai a foto'
+      nome: 'Deadpool(LEGO Marvel Super Heroes)',
+      foto: '../../../../assets/images/API/Deadpool_lego.jpg'
     },
     {
-      nome: 'Homem Aranha',
-      foto: 'aqui vai a foto'
-    }
+      nome: 'Doctor Strange(Ultimate)',
+      foto: '../../../../assets/images/API/Doctor_Strange.jpg'
+    },
+    {
+      nome: 'Captain Marvel (Carol Danvers)',
+      foto: '../../../../assets/images/API/Capita_Marvel.jpg'
+    },
+    {
+      nome: 'Venom (Ultimate)',
+      foto: '../../../../assets/images/API/Venon.jpg'
+    },
+    {
+      nome: 'Dazzler (Ultimate)',
+      foto: '../../../../assets/images/API/Dazzler.jpg'
+    },
+    {
+      nome: 'Deadpool',
+      foto: '../../../../assets/images/API/Deadpool.jpg'
+    },
+    {
+      nome: 'Deadpool(LEGO Marvel Super Heroes)',
+      foto: '../../../../assets/images/API/Deadpool_lego.jpg'
+    },
+    {
+      nome: 'Doctor Strange(Ultimate)',
+      foto: '../../../../assets/images/API/Doctor_Strange.jpg'
+    }, 
+    {
+      nome: 'Captain Marvel (Carol Danvers)',
+      foto: '../../../../assets/images/API/Capita_Marvel.jpg'
+    },
+    {
+      nome: 'Venom (Ultimate)',
+      foto: '../../../../assets/images/API/Venon.jpg'
+    },
+    {
+      nome: 'Dazzler (Ultimate)',
+      foto: '../../../../assets/images/API/Dazzler.jpg'
+    },
+    {
+      nome: 'Deadpool',
+      foto: '../../../../assets/images/API/Deadpool.jpg'
+    },
+    {
+      nome: 'Deadpool(LEGO Marvel Super Heroes)',
+      foto: '../../../../assets/images/API/Deadpool_lego.jpg'
+    },
+    {
+      nome: 'Doctor Strange(Ultimate)',
+      foto: '../../../../assets/images/API/Doctor_Strange.jpg'
+    }, 
+    {
+      nome: 'Captain Marvel (Carol Danvers)',
+      foto: '../../../../assets/images/API/Capita_Marvel.jpg'
+    },
+    {
+      nome: 'Venom (Ultimate)',
+      foto: '../../../../assets/images/API/Venon.jpg'
+    },
+    {
+      nome: 'Dazzler (Ultimate)',
+      foto: '../../../../assets/images/API/Dazzler.jpg'
+    },
+    {
+      nome: 'Deadpool',
+      foto: '../../../../assets/images/API/Deadpool.jpg'
+    },
+    {
+      nome: 'Deadpool(LEGO Marvel Super Heroes)',
+      foto: '../../../../assets/images/API/Deadpool_lego.jpg'
+    },
+    {
+      nome: 'Doctor Strange(Ultimate)',
+      foto: '../../../../assets/images/API/Doctor_Strange.jpg'
+    }, 
+    {
+      nome: 'Captain Marvel (Carol Danvers)',
+      foto: '../../../../assets/images/API/Capita_Marvel.jpg'
+    },
+    {
+      nome: 'Venom (Ultimate)',
+      foto: '../../../../assets/images/API/Venon.jpg'
+    },
+    {
+      nome: 'Dazzler (Ultimate)',
+      foto: '../../../../assets/images/API/Dazzler.jpg'
+    },
+    {
+      nome: 'Deadpool',
+      foto: '../../../../assets/images/API/Deadpool.jpg'
+    },
+    {
+      nome: 'Deadpool(LEGO Marvel Super Heroes)',
+      foto: '../../../../assets/images/API/Deadpool_lego.jpg'
+    },
+    {
+      nome: 'Doctor Strange(Ultimate)',
+      foto: '../../../../assets/images/API/Doctor_Strange.jpg'
+    },
   ]
 }

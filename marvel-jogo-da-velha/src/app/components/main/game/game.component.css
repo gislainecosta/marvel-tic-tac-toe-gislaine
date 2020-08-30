@@ -1,0 +1,15 @@
+#game{
+    height: 70vh;
+    width: 33vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 5%;
+}
+
+img{
+    width: 90%;
+    margin-top: 5%;
+}

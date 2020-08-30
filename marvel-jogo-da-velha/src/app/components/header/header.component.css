@@ -6,6 +6,10 @@
     font-size: 18px;
 }
 
+.item-nav:hover{
+    transform: scale(1.04)
+}
+
 .item-nav:first-of-type{
     width: 14vw;
 }
@@ -17,10 +21,6 @@
 .item-nav:last-of-type{
     width: 18vw;
     border:none;
-}
-
-.item-nav:hover{
-    color: #ffb7b7;
 }
 
 #cabecalho{

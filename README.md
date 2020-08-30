@@ -4,6 +4,17 @@ Projeto de jogo da velha com o tema Marvel.
 <br>
 <br>
 
+## <img align="left" alt="Tela" width="40px" src="https://cdn.pixabay.com/photo/2016/11/15/23/51/controller-1827840_960_720.png" /> Como Jogar: 
+
+1. O tabuleiro  é uma matriz  de três linhas por três colunas. Cada jogador possui uma marcação (Hydra ou Shield) e o objetivo é conseguir 3 marcações iguais no sentido horizontal, vertical ou diagonal.
+
+2. Quando uma nova partida é iniciada o sistema sorteia quem irá começar. Quem começa sempre terá a marcação da Shield. Nas proximas rodadas da mesma partida, o início será alternado entre os jogadores, sem mudança da marcação. 
+
+3. Os jogadores jogam alternadamente, uma marcação por vez, clicando numa lacuna que esteja vazia, tentando formar a linha e também impedir que o adversário de ganhar na próxima jogada. Se o número de lacunas acabarem sem que haja um vencedor, é considerado  “velha” e ninguém pontua.
+
+4. A rodada acaba quando há vitória de um dos jogadores ou quando “Dá velha”. Quando a rodada acaba, o placar é atualizado.  <br>
+<br>
+
 ## <> Principais tecnologias/ferramentas utilizadas
 
 1. [Angular CLI](https://github.com/angular/angular-cli) versão 10.0.7.

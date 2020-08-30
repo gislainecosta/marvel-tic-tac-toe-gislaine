@@ -27,7 +27,7 @@ Projeto de jogo da velha com o tema Marvel.
 
 ## <img align="left" alt="Logo Angular" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" /> Como instalar
 
-1. Faça um clone do repositório
+1. Rode o comando `git clone  https://github.com/gislainecosta/marvel-tic-tac-toe-gislaine.git` para fazer um clone do repositório
 2. Rode o comando `npm install` dentro da pasta marvel-jogo-da-velha para instalar as dependências
 3. Rode o comando `ng serve --open` para abrir a aplicação em `http://localhost:4200/`
 4. Para obter mais ajuda sobre o Angular CLI, use `ng help` ou verifique o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

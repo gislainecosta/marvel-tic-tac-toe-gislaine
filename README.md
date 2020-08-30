@@ -4,9 +4,9 @@ Projeto de jogo da velha com o tema Marvel.
 <br>
 <br>
 
-## <img align="left" alt="Tecnologias" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Parentesi_Uncinate.svg/1200px-Parentesi_Uncinate.svg.png" /> Principais tecnologias/ferramentas utilizadas
+## <> Principais tecnologias/ferramentas utilizadas
 
-1. Angular
+1. [Angular CLI](https://github.com/angular/angular-cli) versão 10.0.7.
 2. Typescript
 3. Estilização Avançada com CSS
 <br><br>
@@ -29,4 +29,5 @@ Projeto de jogo da velha com o tema Marvel.
 
 1. Faça um clone do repositório
 2. Rode o comando npm install dentro da pasta marvel-jogo-da-velha para instalar as dependências
-3. Rode o comando ng serve --open para abrir a aplicação no localhost
+3. Rode o comando ng serve --open para abrir a aplicação em `http://localhost:4200/`
+4. Para obter mais ajuda sobre o Angular CLI, use `ng help` ou verifique o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

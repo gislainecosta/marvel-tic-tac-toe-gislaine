@@ -3,13 +3,7 @@
     <section id="navegacao">
         <div class='item-nav' (click)="newGame()">Reiniciar Partida</div>
         <div class='item-nav' (click)="openTutorial()">Tutorial</div>
-        <div class='item-nav' (click)="openList()">Lista de Personagens</div>
     </section>
 </div>
 <app-card-new-game *ngIf='isOpenNewGame'></app-card-new-game>
 <app-card-tutorial *ngIf='isOpenTutorial'></app-card-tutorial>
-<app-card-list *ngIf='isOpenList'></app-card-list>
-
-
-
-

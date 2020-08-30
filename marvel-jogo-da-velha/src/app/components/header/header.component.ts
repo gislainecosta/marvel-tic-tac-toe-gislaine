@@ -12,15 +12,9 @@ export class HeaderComponent implements OnInit {
 
   isOpenNewGame: boolean = false;
 
-  isOpenList: boolean = false;
-
   isOpenTutorial: boolean = false;
 
   variavel = 'Reste';
-
-  openList(): void {
-    this.isOpenList = true
-  }
 
   newGame(): void {
     this.isOpenNewGame = true

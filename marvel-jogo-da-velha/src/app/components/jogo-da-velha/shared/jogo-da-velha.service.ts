@@ -12,7 +12,7 @@ export class JogoDaVelhaService {
   private tabuleiro: any;
   private numMovimentos: number;
   private vitoria: any;
-  
+
   private jogador: number;
   private showInicio: boolean;
   private showTabuleiro: boolean;
@@ -20,25 +20,24 @@ export class JogoDaVelhaService {
 
   constructor() { }
 
-  inicializar():void{
-    this.showInicio =  true;  
-    this.showTabuleiro = false;
+  inicializar(): void {
+    this.showInicio = false;
+    this.showTabuleiro = true;
     this.showFinal = false;
     this.numMovimentos = 0;
-    this.jogador= this.X;
+    this.jogador = this.X;
     this.vitoria = false;
-    this.inicializarTabuleiro(); 
+    this.inicializarTabuleiro();
   }
 
-  inicializarTabuleiro(): void{
+  inicializarTabuleiro(): void {
     this.tabuleiro = [this.TAM_TAB];
     for (let i = 0; i < this.TAM_TAB; i++) {
       this.tabuleiro[i] = [this.VAZIO, this.VAZIO, this.VAZIO]
-      
     }
   }
 
-  get ShowInicio(): boolean{
+  get ShowInicio(): boolean {
     return this.showInicio;
   }
 
@@ -47,64 +46,70 @@ export class JogoDaVelhaService {
   }
 
   get ShowTabuleiro(): boolean {
-    return this.tabuleiro;
+    return this.showTabuleiro;
   }
 
   get Jogador(): number {
     return this.jogador;
   }
 
-  iniciarJogo(): void{
+  iniciarJogo(): void {
     this.showInicio = false;
     this.showTabuleiro = true;
   }
 
-  jogar(posX: number, posY: number):void{
-    if (this.tabuleiro[posX][posY] !== this.VAZIO || this.vitoria) {
+  jogar(posX: number, posY: number): void {
+    if (this.tabuleiro[posX][posY] !== this.VAZIO ||
+      this.vitoria) {
       return;
     }
 
     this.tabuleiro[posX][posY] = this.jogador;
     this.numMovimentos++;
     this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this.jogador);
-    this.jogador = (this.jogador === this.X)? this.O : this.X;
+    this.jogador = (this.jogador === this.X) ? this.O : this.X;
 
-    if (this.vitoria !== false){
+    if (this.vitoria !== false) {
       this.showFinal = true;
     }
 
-    if(!this.vitoria && this.numMovimentos === 9){
+    if (!this.vitoria && this.numMovimentos === 9) {
       this.jogador = 0;
       this.showFinal = true;
     }
   }
 
-  fimJogo(linha:number, coluna:number, tabuleiro:any, jogador:number){
-    let fim:any = false;
+  fimJogo(linha: number, coluna: number, tabuleiro: any, jogador: number) {
+    let fim: any = false;
 
-    if(tabuleiro[linha][0] === jogador &&
+    if (tabuleiro[linha][0] === jogador &&
       tabuleiro[linha][1] === jogador &&
-      tabuleiro[linha][2] === jogador){
+      tabuleiro[linha][2] === jogador) {
       fim = [[linha, 0], [linha, 1], [linha, 2]];
     }
 
-    if (tabuleiro[coluna][0] === jogador &&
-      tabuleiro[coluna][1] === jogador &&
-      tabuleiro[coluna][2] === jogador) {
+    if (tabuleiro[0][coluna] === jogador &&
+      tabuleiro[1][coluna] === jogador &&
+      tabuleiro[2][coluna] === jogador) {
       fim = [[0, coluna], [1, coluna], [2, coluna]];
     }
 
     if (tabuleiro[0][0] === jogador &&
       tabuleiro[1][1] === jogador &&
       tabuleiro[2][2] === jogador) {
+      fim = [[0, 0], [1, 1], [2, 2]];
+    }
+
+    if (tabuleiro[0][2] === jogador &&
+      tabuleiro[1][1] === jogador &&
+      tabuleiro[2][0] === jogador) {
       fim = [[0, 2], [1, 1], [2, 0]];
     }
 
     return fim;
   }
 
-
-  exibirX(posX:number, posY:number): boolean{
+  exibirX(posX: number, posY: number): boolean {
     return this.tabuleiro[posX][posY] === this.X;
   }
 
@@ -112,24 +117,7 @@ export class JogoDaVelhaService {
     return this.tabuleiro[posX][posY] === this.O;
   }
 
-  exibirVitoria(posX: number, posY: number): boolean {
-    let exibirVitoria: boolean = false
-    
-    if (!this.vitoria) {
-      return exibirVitoria
-    }
-    
-    for (let pos of this.vitoria) {
-      if (pos[0] === posX && pos[1] === posY) {
-        exibirVitoria = true;
-        break
-      }
-    }
-
-    return exibirVitoria
-  }
-
-  novoJogo(): void{
+  novoJogo(): void {
     this.inicializar();
     this.showInicio = false;
     this.showFinal = false;

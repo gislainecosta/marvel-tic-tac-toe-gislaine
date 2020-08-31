@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardVitoriaHydraComponent } from './card-vitoria-hydra.component';
+import { VitoriaShieldComponent } from './vitoria-shield.component';
 
-describe('CardVitoriaHydraComponent', () => {
-  let component: CardVitoriaHydraComponent;
-  let fixture: ComponentFixture<CardVitoriaHydraComponent>;
+describe('VitoriaShieldComponent', () => {
+  let component: VitoriaShieldComponent;
+  let fixture: ComponentFixture<VitoriaShieldComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardVitoriaHydraComponent ]
+      declarations: [ VitoriaShieldComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardVitoriaHydraComponent);
+    fixture = TestBed.createComponent(VitoriaShieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

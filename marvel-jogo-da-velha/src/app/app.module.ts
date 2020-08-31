@@ -10,9 +10,6 @@ import { CardTutorialComponent } from './components/header/card-tutorial/card-tu
 import { CardNewGameComponent } from './components/header/card-new-game/card-new-game.component';
 import { GamerSearchComponent } from './components/main/gamer-search/gamer-search.component';
 import { CardErroComponent } from './components/main/card-erro/card-erro.component';
-import { CardVelhaComponent } from './components/main/card-velha/card-velha.component';
-import { CardVitoriaHydraComponent } from './components/main/card-vitoria-hydra/card-vitoria-hydra.component';
-import { CardVitoriaShieldComponent } from './components/main/card-vitoria-shield/card-vitoria-shield.component';
 import { JogoDaVelhaModule } from './components/jogo-da-velha'
 
 @NgModule({
@@ -26,9 +23,6 @@ import { JogoDaVelhaModule } from './components/jogo-da-velha'
     CardNewGameComponent,
     GamerSearchComponent,
     CardErroComponent,
-    CardVelhaComponent,
-    CardVitoriaHydraComponent,
-    CardVitoriaShieldComponent
   ],
   imports: [
   JogoDaVelhaModule,

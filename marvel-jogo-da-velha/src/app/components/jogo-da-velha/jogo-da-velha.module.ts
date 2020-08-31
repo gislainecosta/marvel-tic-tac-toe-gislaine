@@ -3,19 +3,17 @@ import { CommonModule } from '@angular/common';
 import { JogoDaVelhaComponent } from './jogo-da-velha.component';
 import { JogoDaVelhaService } from './shared';
 
-
-
 @NgModule({
   declarations: [
-    JogoDaVelhaComponent
+    JogoDaVelhaComponent,
   ],
   imports: [
-  CommonModule
-  ], 
+    CommonModule
+  ],
   exports: [
     JogoDaVelhaComponent
   ],
-  providers:[
+  providers: [
     JogoDaVelhaService
   ]
 })

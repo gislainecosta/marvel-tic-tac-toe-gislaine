@@ -1,34 +1,35 @@
 <div>
-    <section class='principal'>
+    <section class='principal' *ngIf='showInicio'>
         <a href='#'
-        class='botao'>
+            class='botao'
+            (click)='iniciarJogo()'
+        >
             Iniciar
         </a>
     </section>
 
     <section>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div class='grade' *ngIf='showTabuleiro'>
+            <article *ngFor = 'let posicao of posicoes' >
+                <div class='celula' 
+                    [class.celula-imgx]='exibirX(posicao.x, posicao.y)'
+                    [class.celula-imgo]='exibirO(posicao.x, posicao.y)'
+                    (click)='jogar(posicao.x, posicao.y)'
+                ></div>
+            </article>
+        </div>
     </section>
 
-    <section>
-        <span>
-            <p>Você Venceu!!!</p>
-            <p>Você perdeu...</p>
-            <p>O jogo terminou empatado...</p>
-            <br />
-            <a>
-                Jogar Novamente
-            </a>
-        </span>
+    <section class='container-card' *ngIf='showFinal'>
+        <img *ngIf='jogador==1' src='../../../assets/images/vitoria-shield.png'>
+        <img *ngIf='jogador==2' src='../../../assets/images/vitoria-hydra.png'>
+        <img *ngIf='jogador==0' src='../../../assets/images/velha.png'>
+        <button 
+            [ngClass]="{
+                'botao-shield': jogador===1,
+                'botao-hydra': jogador===2,
+                'botao-velha': jogador===0
+            }"
+            (click)='novoJogo()'>Eu posso fazer isso o dia Todo!</button>
     </section>
 </div>

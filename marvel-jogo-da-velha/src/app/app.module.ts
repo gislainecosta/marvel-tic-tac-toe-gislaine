@@ -13,6 +13,7 @@ import { CardErroComponent } from './components/main/card-erro/card-erro.compone
 import { CardVelhaComponent } from './components/main/card-velha/card-velha.component';
 import { CardVitoriaHydraComponent } from './components/main/card-vitoria-hydra/card-vitoria-hydra.component';
 import { CardVitoriaShieldComponent } from './components/main/card-vitoria-shield/card-vitoria-shield.component';
+import { JogoDaVelhaModule } from './components/jogo-da-velha'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CardVitoriaShieldComponent } from './components/main/card-vitoria-shiel
     CardVitoriaShieldComponent
   ],
   imports: [
-    BrowserModule
+  JogoDaVelhaModule,
+  BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

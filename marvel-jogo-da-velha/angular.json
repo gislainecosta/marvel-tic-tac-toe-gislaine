@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "marvel-jogo-da-velha"
+    }
+  },
+  "defaultProject": "marvel-jogo-da-velha",
+  "cli": {
+    "analytics": "5e8fb305-1d17-43cf-8900-b0a6cda7326f"
+  }
 }

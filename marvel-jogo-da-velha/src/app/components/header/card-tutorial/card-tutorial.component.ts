@@ -13,7 +13,6 @@ export class CardTutorialComponent implements OnInit {
   ngOnInit(): void {}
 
   fecharTutorial(): void {
-    console.log('chamou no cad-tutorial-component')
     this.HeaderService.fecharTutorial()
   }
 }

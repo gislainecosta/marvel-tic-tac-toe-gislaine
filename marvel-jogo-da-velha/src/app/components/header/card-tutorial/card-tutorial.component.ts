@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '../shared/header.service';
 
 @Component({
   selector: 'app-card-tutorial',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardTutorialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private HeaderService: HeaderService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  fecharTutorial(): void {
+    console.log('chamou no cad-tutorial-component')
+    this.HeaderService.fecharTutorial()
   }
-
 }

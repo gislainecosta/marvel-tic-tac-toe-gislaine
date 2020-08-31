@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from './shared/header.service';
+
 
 @Component({
   selector: 'app-header',
@@ -6,21 +8,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor(private HeaderService: HeaderService) {}
 
-  ngOnInit(): void {}
-
-  isOpenNewGame: boolean = false;
-
-  isOpenTutorial: boolean = false;
-
-  variavel = 'Reste';
-
-  newGame(): void {
-    this.isOpenNewGame = true
+  ngOnInit(): void {
+    this.HeaderService.inicializar();
   }
 
-  openTutorial(): void {
-    this.isOpenTutorial = true
+  get ShowTutorial(): boolean {
+    return this.HeaderService.ShowTutorial
+  }
+
+  get ShowNewGame(): boolean {
+    return this.HeaderService.ShowNewGame
+  }
+
+  abrirTutorial():void{
+    this.HeaderService.abrirTutorial()
+  }
+
+  abrirNewGame(): void {
+    this.HeaderService.abrirNewGame()
+  }
+
+  fecharNewGame(): void {
+    this.HeaderService.fecharNewGame()
+  }
+
+  novoJogo(): void {
+    this.HeaderService.fecharNewGame()
   }
 }

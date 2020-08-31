@@ -7,10 +7,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { GameComponent } from './components/main/game/game.component';
 import { CardTutorialComponent } from './components/header/card-tutorial/card-tutorial.component';
-import { CardNewGameComponent } from './components/header/card-new-game/card-new-game.component';
 import { GamerSearchComponent } from './components/main/gamer-search/gamer-search.component';
 import { CardErroComponent } from './components/main/card-erro/card-erro.component';
-import { JogoDaVelhaModule } from './components/jogo-da-velha'
+import { JogoDaVelhaModule } from './components/jogo-da-velha';
+import { HeaderModule } from './components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -20,13 +20,13 @@ import { JogoDaVelhaModule } from './components/jogo-da-velha'
     MainComponent,
     GameComponent,
     CardTutorialComponent,
-    CardNewGameComponent,
     GamerSearchComponent,
     CardErroComponent,
   ],
   imports: [
-  JogoDaVelhaModule,
-  BrowserModule
+    JogoDaVelhaModule,
+    HeaderModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

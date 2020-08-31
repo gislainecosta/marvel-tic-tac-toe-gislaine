@@ -11,6 +11,8 @@ import { GamerSearchComponent } from './components/main/gamer-search/gamer-searc
 import { CardErroComponent } from './components/main/card-erro/card-erro.component';
 import { JogoDaVelhaModule } from './components/jogo-da-velha';
 import { HeaderModule } from './components/header/header.module';
+import { PersonagemService } from './components/main/shared/personagem.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,12 @@ import { HeaderModule } from './components/header/header.module';
   imports: [
     JogoDaVelhaModule,
     HeaderModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule 
   ],
-  providers: [],
+  providers: [
+    PersonagemService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

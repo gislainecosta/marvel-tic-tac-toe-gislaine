@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonagemService } from '../shared/personagem.service';
+
 
 @Component({
   selector: 'app-card-erro',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardErroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private personagensSvc: PersonagemService) { }
 
   ngOnInit(): void {
   }
 
+  fecharErro(): void {
+    this.personagensSvc.fecharErro();
+  }
 }

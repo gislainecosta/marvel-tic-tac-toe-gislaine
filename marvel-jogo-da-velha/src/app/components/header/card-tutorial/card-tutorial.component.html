@@ -8,17 +8,17 @@
             </li>
 
             <li>Quando uma nova partida é iniciada o sistema sorteia quem irá começar. 
-                Quem começa sempre terá a marcação da Shield. Nas próximas rodadas da mesma partida, 
+                Quem começa sempre terá a marcação da Hydra. Nas próximas rodadas da mesma partida, 
                 o início será alternado entre os jogadores, sem mudança da marcação.
             </li>
 
             <li>Os jogadores jogam alternadamente, uma marcação por vez, clicando numa lacuna que esteja vazia, 
-                tentando formar a linha e também impedir que o adversário de ganhar na próxima jogada. 
-                Se o número de lacunas acabarem sem que haja um vencedor, é considerado “velha” e ninguém pontua.
+                tentando formar a linha e também impedir que o adversário de ganhar na próxima jogada. O card do jogador
+                da vez muda de cor para indicar quem precisa jogar. 
             </li>
 
-            <li>A rodada acaba quando há vitória de um dos jogadores ou quando “Dá velha”. Quando a rodada acaba, 
-                o placar é atualizado.
+            <li>A rodada acaba quando há vitória de um dos jogadores ou quando “Dá velha”(as lacunas acabarem 
+                sem haver um ganhador). Quando a rodada acaba, o placar é atualizado.
             </li>
         </ol>
 
@@ -29,6 +29,6 @@
             <img src="../../../../assets/images/4.png">
         </section>
     </section>
-    <img src="../../../../assets/images/x-circle.svg">
+    <img (click)='fecharTutorial()' src="../../../../assets/images/x-circle.svg">
 </div>
 

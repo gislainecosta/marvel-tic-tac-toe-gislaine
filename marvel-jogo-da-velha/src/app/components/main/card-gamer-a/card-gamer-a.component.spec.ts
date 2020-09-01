@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VitoriaShieldComponent } from './vitoria-shield.component';
+import { CardGamerAComponent } from './card-gamer-a.component';
 
-describe('VitoriaShieldComponent', () => {
-  let component: VitoriaShieldComponent;
-  let fixture: ComponentFixture<VitoriaShieldComponent>;
+describe('CardGamerAComponent', () => {
+  let component: CardGamerAComponent;
+  let fixture: ComponentFixture<CardGamerAComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VitoriaShieldComponent ]
+      declarations: [ CardGamerAComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VitoriaShieldComponent);
+    fixture = TestBed.createComponent(CardGamerAComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

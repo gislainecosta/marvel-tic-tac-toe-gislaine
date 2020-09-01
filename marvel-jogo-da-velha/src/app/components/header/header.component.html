@@ -1,9 +1,14 @@
 <div id='cabecalho'>
     <img src="../../../assets/images/logo.png">
     <section id="navegacao">
-        <div class='item-nav' (click)="newGame()">Reiniciar Partida</div>
-        <div class='item-nav' (click)="openTutorial()">Tutorial</div>
+        <div class='item-nav' (click)="abrirNewGame()">Reiniciar Partida</div>
+        <div class='item-nav' (click)="abrirTutorial()">Tutorial</div>
     </section>
 </div>
-<app-card-new-game *ngIf='isOpenNewGame'></app-card-new-game>
-<app-card-tutorial *ngIf='isOpenTutorial'></app-card-tutorial>
+
+<app-card-tutorial *ngIf='ShowTutorial'></app-card-tutorial>
+<section class='container-card' *ngIf='ShowNewGame'>
+        <img src='../../../assets/images/Novo Jogo.png'>
+        <button (click)='novoJogo()'>Melhor não, com grandes poderes vem grandes responsabilidades</button>
+        <button (click)='fecharNewGame()'>Dormammu, eu vim barganhar!</button>
+</section>

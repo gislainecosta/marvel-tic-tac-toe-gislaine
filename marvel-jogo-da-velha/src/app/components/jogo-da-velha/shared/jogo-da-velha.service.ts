@@ -9,6 +9,8 @@ export class JogoDaVelhaService {
   private readonly O: number = 2;
   private readonly VAZIO: number = 0;
 
+  private vitorias1: number = 0;
+  private vitorias2: number = 0;
   private tabuleiro: any;
   private numMovimentos: number;
   private vitoria: any;
@@ -21,8 +23,8 @@ export class JogoDaVelhaService {
   constructor() { }
 
   inicializar(): void {
-    this.showInicio = false;
-    this.showTabuleiro = true;
+    this.showInicio = true;
+    this.showTabuleiro = false;
     this.showFinal = false;
     this.numMovimentos = 0;
     this.jogador = this.X;
@@ -53,6 +55,14 @@ export class JogoDaVelhaService {
     return this.jogador;
   }
 
+  get Vitorias1(): number {
+    return this.vitorias1;
+  }
+
+  get Vitorias2(): number {
+    return this.vitorias2;
+  }
+
   iniciarJogo(): void {
     this.showInicio = false;
     this.showTabuleiro = true;
@@ -79,6 +89,11 @@ export class JogoDaVelhaService {
     }
   }
 
+  resetarPlacar():void{
+    this.vitorias1 =0;
+    this.vitorias2 =0;
+  }
+
   fimJogo(linha: number, coluna: number, tabuleiro: any, jogador: number) {
     let fim: any = false;
 
@@ -86,25 +101,50 @@ export class JogoDaVelhaService {
       tabuleiro[linha][1] === jogador &&
       tabuleiro[linha][2] === jogador) {
       fim = [[linha, 0], [linha, 1], [linha, 2]];
+      if (jogador === 1) {
+        this.vitorias1++
+      } else if (jogador === 2) {
+        this.vitorias2++
+      }
     }
 
     if (tabuleiro[0][coluna] === jogador &&
       tabuleiro[1][coluna] === jogador &&
       tabuleiro[2][coluna] === jogador) {
       fim = [[0, coluna], [1, coluna], [2, coluna]];
+      if (jogador === 1) {
+        this.vitorias1++
+      } else if (jogador === 2) {
+        this.vitorias2++
+      }
     }
 
     if (tabuleiro[0][0] === jogador &&
       tabuleiro[1][1] === jogador &&
       tabuleiro[2][2] === jogador) {
       fim = [[0, 0], [1, 1], [2, 2]];
+      if (jogador === 1) {
+        this.vitorias1++
+      } else if (jogador === 2) {
+        this.vitorias2++
+      }
     }
 
     if (tabuleiro[0][2] === jogador &&
       tabuleiro[1][1] === jogador &&
       tabuleiro[2][0] === jogador) {
       fim = [[0, 2], [1, 1], [2, 0]];
+      if (jogador === 1) {
+        this.vitorias1++
+      } else if (jogador === 2) {
+        this.vitorias2++
+      }
     }
+
+    
+
+    console.log('vit1', this.vitorias1)
+    console.log('vit2', this.vitorias2)
 
     return fim;
   }

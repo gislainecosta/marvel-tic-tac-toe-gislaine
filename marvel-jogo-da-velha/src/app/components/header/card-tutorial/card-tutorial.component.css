@@ -27,8 +27,8 @@ ol{
 }
 
 li{
-    font-size: 1.2rem;
-    margin-bottom: 2.5%;
+    font-size: 1rem;
+    margin-bottom: 1.5%;
 }
 
 #card{
@@ -48,6 +48,7 @@ li{
     justify-content: space-around;
     align-items: center;
     width: 90%;
+    margin-top: -1%;
 }
 
 #container-examples img{

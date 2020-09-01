@@ -23,7 +23,7 @@ Projeto de jogo da velha com o tema Marvel.
 <br><br>
 
 
-## <img align="left" alt="Logo Site" width="40px" src="https://www.logolynx.com/images/logolynx/2d/2d9b83e7e721da89b2cebc00d8239248.png" />  Deploy da aplicação (Otimizado para Desktop): [Clique aqui]()
+## <img align="left" alt="Logo Site" width="40px" src="https://www.logolynx.com/images/logolynx/2d/2d9b83e7e721da89b2cebc00d8239248.png" />  Deploy da aplicação (Otimizado para Desktop): [Clique aqui](https://marvel-jogo-da-velha-gislaine.sh)
 <br>
 <br>
 

@@ -1,0 +1,36 @@
+<div id="gamer">
+    <div *ngIf='showProcurarA'>
+        <p>Escolha seu Personagem</p>
+        <form>
+            <input placeholder="Nome (mínimo 3 letras)" type='text' id='personagem' name='personagem' minlength='3'
+                required (input)="nomePesquisar=$event.target.value" />
+            <img (click)="buscaPersonagem()" src="../../../../assets/images/Lupa.png">
+        </form>
+
+        <ul>
+            <li (click)='escolhePersonagemA(personagem.id)' *ngFor='let personagem of personagens'>{{personagem.name}}
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf='showEscolhaA'>
+        <section id="escolha" *ngFor='let personagem of personagemJogadorA'>
+            <img id='foto-escolha' [src]="personagem.thumbnail.path+'.'+personagem.thumbnail.extension">
+            <p>{{personagem.name}}</p>
+            <img (click)='escolherNovamenteA()' class='botao-escolha' src='../../../../assets/images/botãox.png'>
+            <img (click)='iniciarJogoA()' class='botao-escolha' src='../../../../assets/images/botão amei.png'>
+        </section>
+    </div>
+
+
+    <div *ngIf='showJogadorA'>
+        <section id="jogar" *ngFor='let personagem of personagemJogadorA'>
+            <P>Vitórias: {{vitoriasA}}</P>
+            <img [src]="personagem.thumbnail.path+'.'+personagem.thumbnail.extension">
+            <p>{{personagem.name}}</p>
+            <img [src]="pathFotoA">
+        </section>
+    </div>
+</div>
+
+<app-card-erro *ngIf='showErro'></app-card-erro>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from './shared/header.service';
+import { JogoDaVelhaService } from './../jogo-da-velha/shared/jogo-da-velha.service';
 
 
 @Component({
@@ -8,7 +9,10 @@ import { HeaderService } from './shared/header.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private HeaderService: HeaderService) {}
+  constructor(
+    private HeaderService: HeaderService,
+    private jogoVelhaSvc: JogoDaVelhaService
+  ) {}
 
   ngOnInit(): void {
     this.HeaderService.inicializar();
@@ -32,9 +36,11 @@ export class HeaderComponent implements OnInit {
 
   fecharNewGame(): void {
     this.HeaderService.fecharNewGame()
+    this.jogoVelhaSvc.resetarPlacar()
   }
 
   novoJogo(): void {
     this.HeaderService.fecharNewGame()
   }
 }
+

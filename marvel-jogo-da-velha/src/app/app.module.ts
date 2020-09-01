@@ -12,6 +12,8 @@ import { JogoDaVelhaModule } from './components/jogo-da-velha';
 import { HeaderModule } from './components/header/header.module';
 import { PersonagemService } from './components/main/shared/personagem.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CardGamerAComponent } from './components/main/card-gamer-a/card-gamer-a.component';
+import { CardGamerBComponent } from './components/main/card-gamer-b/card-gamer-b.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     MainComponent,
     CardTutorialComponent,
     CardErroComponent,
+    CardGamerAComponent,
+    CardGamerBComponent,
   ],
   imports: [
     JogoDaVelhaModule,

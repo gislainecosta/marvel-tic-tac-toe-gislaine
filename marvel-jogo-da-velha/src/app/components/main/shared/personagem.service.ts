@@ -10,17 +10,23 @@ export class PersonagemService implements OnInit {
   private numeroJogador: number;
   private jogadorA: number;
   private jogadorB: number;
-  private showProcurar: boolean;
-  private showEscolha: boolean;
-  private showJogador: boolean;
+  private showProcurarA: boolean;
+  private showEscolhaA: boolean;
+  private showJogadorA: boolean;
+  private showProcurarB: boolean;
+  private showEscolhaB: boolean;
+  private showJogadorB: boolean;
   private showErro: boolean;
 
   inicializar(): void {
     this.jogadorA = Math.floor(Math.random() * 2) + 1;
-    this.showProcurar = true;
+    this.showProcurarA = true;
+    this.showProcurarB = true;
     this.showErro = false;
-    this.showEscolha = false;
-    this.showJogador = false;
+    this.showEscolhaA = false;
+    this.showEscolhaB = false;
+    this.showJogadorA = false;
+    this.showJogadorB = false;
     this.jogadorB = this.jogadorA === 1 ? 2 : 1;
   }
 
@@ -41,42 +47,69 @@ export class PersonagemService implements OnInit {
   }
 
   escolherNovamenteA():void{
-    this.showEscolha = false;
-    this.showProcurar = true;
+    this.showEscolhaA = false;
+    this.showProcurarA = true;
+  }
+
+  escolherNovamenteB(): void {
+    this.showEscolhaB = false;
+    this.showProcurarB = true;
   }
 
   jogadorAcomeca():void{
-    this.showJogador = true;
-    this.showEscolha = false;
+    this.showJogadorA = true;
+    this.showEscolhaA = false;
   }
 
-  get ShowProcurar(): boolean {
-    return this.showProcurar;
+  jogadorBcomeca(): void {
+    this.showJogadorB = true;
+    this.showEscolhaB = false;
   }
 
-  get ShowEscolha(): boolean {
-    return this.showEscolha;
+  get ShowProcurarA(): boolean {
+    return this.showProcurarA;
   }
 
-  get ShowJogador(): boolean {
-    return this.showJogador;
+  get ShowProcurarB(): boolean {
+    return this.showProcurarB;
+  }
+
+  get ShowEscolhaA(): boolean {
+    return this.showEscolhaA;
+  }
+
+  get ShowJogadorA(): boolean {
+    return this.showJogadorA;
   }
 
   get ShowErro(): boolean {
     return this.showErro;
   }
 
-  get JogadorA(): number {
+  get ShowEscolhaB(): boolean {
+    return this.showEscolhaB;
+  }
+
+  get ShowJogadorB(): boolean {
+    return this.showJogadorB;
+  }
+
+  get numJogadorA(): number {
     return this.jogadorA;
   }
 
-  get JogadorB(): number {
+  get numJogadorB(): number {
     return this.jogadorB;
   }
 
   jogadorAEscolhe(): void {
-    this.showEscolha = true;
-    this.showProcurar = false;
+    this.showEscolhaA = true;
+    this.showProcurarA = false;
+  }
+
+  jogadorBEscolhe(): void {
+    this.showEscolhaB = true;
+    this.showProcurarB = false;
   }
 
   abreErro():void{
@@ -85,6 +118,5 @@ export class PersonagemService implements OnInit {
 
   fecharErro(): void{
     this.showErro = false;
-    this.showProcurar = true;
   }
 }

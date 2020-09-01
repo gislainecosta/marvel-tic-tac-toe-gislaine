@@ -1,0 +1,173 @@
+#gamer{
+    height: 70vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px 50px 0px 50px;
+}
+
+#foto-escolha{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 30px 30px 0 30px ;
+    border:5px solid #120A09;
+}
+#escolha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    height: 65vh;
+    margin-top: 2.5vh;
+    margin-left: 1.5vw;
+}
+
+
+#jogar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    height: 65vh;
+    margin-top: 2.5vh;
+    margin-left: 1.5vw;
+}
+
+#jogar p{
+    text-align: center;
+}
+
+#jogar p:first-of-type{
+    grid-area: 1/1/2/2; 
+    font-size: 2rem;
+}
+
+#jogar p:last-of-type{
+    grid-area: 3/1/4/3;
+    font-size: 2rem;
+}
+
+#jogar img:first-of-type{
+    grid-area: 1/2/3/3;
+    border-radius: 30px;
+    border:5px solid #120A09;
+    width: 90%;
+    height: 90%;
+}
+
+#jogar img:last-of-type{
+    width: 10vw;
+    height: 10vw;
+}
+
+
+.botao-escolha{
+    width: 7vw;
+    margin-left: -2vw;
+    height:7vw;
+    cursor: pointer;
+}
+
+.botao-escolha:hover{
+    transform: scale(1.05)
+}
+
+.botao-escolha:active{
+    transform: scale(0.9)
+}
+
+form{
+    display: flex;
+    border-bottom: 2px solid black;
+    margin-bottom: 2vh;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    margin-bottom:0;
+    border-radius: 50px 50px 0px 0px;
+    margin: auto;
+}
+
+input,
+input:hover,
+input:active,
+input:focus{
+    background-color: transparent;
+    width:95%;
+    border: none;
+    outline: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #707070;
+}
+
+p{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin: 8% 0;
+    font-weight: bold;
+}
+
+form img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+ul{
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    width: 25vw;
+    height: 40vh;
+    padding: 0 2%;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 2%;
+    padding: 0;
+}
+
+li:hover{
+    transform: scale(1.02)
+}
+
+li:active{
+    transform: scale(0.9)
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #989fac);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #494f5a);
+}
+
+::placeholder{
+  color: #707070;
+  font-size: 20px;
+  text-align: center;
+}

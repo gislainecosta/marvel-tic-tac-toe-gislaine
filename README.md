@@ -20,19 +20,15 @@ Projeto de jogo da velha com o tema Marvel.
 1. [Angular CLI](https://github.com/angular/angular-cli) versão 10.0.7.
 2. Typescript
 3. Estilização Avançada com CSS
+4. OTIMIZADO PARA DESKTOP
+5. Planejamento no [Figma](https://www.figma.com/file/3Xyey9UrnGCjLmzrT20D2W/Marvel-Jogo-da-Velha?node-id=29%3A46).
 <br><br>
 
 
-## <img align="left" alt="Logo Site" width="40px" src="https://www.logolynx.com/images/logolynx/2d/2d9b83e7e721da89b2cebc00d8239248.png" />  Deploy da aplicação (Otimizado para Desktop): [Clique aqui](https://marvel-jogo-da-velha-gislaine.sh)
-<br>
-<br>
-
-
 ## <img align="left" alt="Tela" width="40px" src="https://images.tcdn.com.br/img/img_prod/679622/monitor_led_19_brazil_pc_19bp19we02_preto_widescreen_hdmi_vga_12577_1_20190203094755.png" /> Demonstração: 
-<br>
-<br>
-
-## <img align="left" alt="Tela" width="40px" src="https://images.tcdn.com.br/img/img_prod/679622/monitor_led_19_brazil_pc_19bp19we02_preto_widescreen_hdmi_vga_12577_1_20190203094755.png" />Telas: 
+<p align="center">
+  <img align='center' height='400' src='https://docs.google.com/uc?id=1avRUdCU8ekAzxVTBYmKX3WmVt1OmXnSc'>
+</p>
 <br>
 <br>
 
